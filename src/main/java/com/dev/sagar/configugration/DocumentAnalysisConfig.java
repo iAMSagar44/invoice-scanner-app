@@ -12,8 +12,8 @@ public class DocumentAnalysisConfig {
     @Bean
     public DocumentAnalysisClient documentAnalysisClient() {
         return new DocumentAnalysisClientBuilder()
-                .endpoint(System.getenv("DOCUMENT_ANALYSIS_ENDPOINT"))
-                .credential(new AzureKeyCredential(System.getenv("DOCUMENT_ANALYSIS_API_KEY")))
+                .endpoint(System.getenv("DOCUMENT_INTELLIGENCE_ENDPOINT"))
+                .credential(new AzureKeyCredential(System.getenv("DOCUMENT_INTELLIGENCE_KEY")))
                 .buildClient();
     }
 }
